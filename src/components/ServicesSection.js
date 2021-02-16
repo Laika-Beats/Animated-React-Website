@@ -1,11 +1,11 @@
 import React from "react";
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
-import clock from "../images/clock.svg";
-import diaphragm from "../images/diaphragm.svg";
-import teamwork from "../images/teamwork.svg";
-import camrea from "../images/home2.png";
-import money from "../images/money.svg";
+import clock from "../img/clock.svg";
+import diaphragm from "../img/diaphragm.svg";
+import teamwork from "../img/teamwork.svg";
+import camrea from "../img/home2.png";
+import money from "../img/money.svg";
 
 function ServicesSection() {
   return (

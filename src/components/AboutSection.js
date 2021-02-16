@@ -1,6 +1,6 @@
 import React from "react";
 import { About, Description, Image, Hide } from "../styles";
-import aboutImage from "../images/home1.png";
+import aboutImage from "../img/home1.png";
 
 const AboutSection = () => {
   return (

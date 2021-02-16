@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
 body {
   background: #1b1b1b;
   font-family: 'Gruppo', cursive;
-  /* font-family: 'Rock Salt', cursive; */
 }
 
 button{

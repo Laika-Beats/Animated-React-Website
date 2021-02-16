@@ -1,51 +1,83 @@
 import React from "react";
-// import Icons
+import { About, Description, Image } from "../styles";
+import styled from "styled-components";
 import clock from "../images/clock.svg";
-import diaphragm from "../images/money.svg";
+import diaphragm from "../images/diaphragm.svg";
 import teamwork from "../images/teamwork.svg";
 import camrea from "../images/home2.png";
+import money from "../images/money.svg";
 
 function ServicesSection() {
   return (
-    <div className="services">
-      <div className="description">
+    <Services>
+      <Description>
         <h2>
           {" "}
           High <span>quality</span> services
         </h2>
-        <div className="cards">
-          <div className="card">
+        <Cards>
+          <Card>
             <div className="icon">
               <img src={clock} alt="clock icon" />
               <h3>Efficent</h3>
             </div>
             <p>I LOVE to create and design.</p>
-          </div>
-          <div className="card">
+          </Card>
+          <Card>
             <div className="icon">
               <img src={teamwork} alt="people icon" />
               <h3>Teamwork</h3>
             </div>
             <p>I LOVE to create and design.</p>
-          </div>
-          <div className="card">
+          </Card>
+          <Card>
             <div className="icon">
-              <img src={diaphragm} alt="money icon" />
+              <img src={diaphragm} alt="circle icon" />
               <h3>Diaphragm</h3>
             </div>
             <p>I LOVE to create and design.</p>
-          </div>
-          <div className="card">
+          </Card>
+          <Card>
             <div className="icon">
-              <img src={camrea} alt="professional camrea" />
+              <img src={money} alt="money" />
               <h3>Affordable</h3>
             </div>
             <p>I LOVE to create and design.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Card>
+        </Cards>
+      </Description>
+      <Image>
+        <img src={camrea} alt="professional camrea" />
+      </Image>
+    </Services>
   );
 }
+
+const Services = styled(About)`
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0rem 4rem 0rem;
+  }
+`;
+
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Card = styled.div`
+  flex-basis: 20rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 1rem;
+      padding: 1rem;
+    }
+  }
+`;
 
 export default ServicesSection;

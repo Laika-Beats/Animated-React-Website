@@ -49,6 +49,12 @@ const Headline = styled.div`
     position: absolute;
     top: 10%;
     left: 50%;
+    transform: translate(-50%, -10%);
+  }
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
   }
 `;
 
@@ -60,13 +66,29 @@ const Awards = styled.div`
   justify-content: space-around;
 `;
 
+const AwardStyle = styled.div`
+  padding: 5rem;
+  h3 {
+    font-size: 2rem;
+  }
+  .line {
+    width: 100%;
+    background: #23d997;
+    height: 0.5rem;
+    margin: 1rem 0rem;
+  }
+  p {
+    padding: 2rem 0rem;
+  }
+`;
+
 const Award = ({ title, description }) => {
   return (
-    <div>
+    <AwardStyle>
       <h3>{title}</h3>
       <div className="line"></div>
       <p>{description}</p>
-    </div>
+    </AwardStyle>
   );
 };
 

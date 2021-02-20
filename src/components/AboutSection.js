@@ -31,6 +31,8 @@ const AboutSection = () => {
       <Image>
         <motion.img
           variants={photoAnimation}
+          initial="hidden"
+          animate="show"
           src={aboutImage}
           alt="Young man sitting in nature"
         />

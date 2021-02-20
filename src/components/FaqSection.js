@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { About } from "../styles";
+import { Toggle } from "../components/Toggle";
 
 const FaqSection = () => {
   return (
@@ -8,17 +9,19 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>{" "}
       </h2>
-      <div className="question">
-        <h4>How Do I Start?</h4>
-        <div className="answer">
-          <p>Random placeholder text.</p>
-          <p>
-            Even more random placeholder text. Can you believe it in this
-            economy?
-          </p>
+      <Toggle>
+        <div className="question">
+          <h4>How Do I Start?</h4>
+          <div className="answer">
+            <p>Random placeholder text.</p>
+            <p>
+              Even more random placeholder text. Can you believe it in this
+              economy?
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="faq-line" />
+        <div className="faq-line" />
+      </Toggle>
       <div className="question">
         <h4>Daily Schedule</h4>
         <div className="answer">

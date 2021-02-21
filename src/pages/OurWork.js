@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 import {
   pageAnimation,
   fade,
@@ -10,8 +12,6 @@ import {
   sliderContainer,
   scrollReveal,
 } from "../animation";
-import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
 import styled from "styled-components";
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
@@ -29,19 +29,14 @@ const OurWork = () => {
       style={{ background: "#fff" }}
       exit="exit"
     >
-      <motion.div variants={sliderContainer}>
+      <motion.div variants={sliderContainer} initial="hidden" animate="show">
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
 
-      <Movie
-        ref={element3}
-        variants={scrollReveal}
-        animate={controls3}
-        intitial="hidden"
-      >
+      <Movie variants={scrollReveal} initial="show">
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/the-athlete">

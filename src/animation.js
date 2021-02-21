@@ -1,7 +1,7 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: -300,
+    y: 300,
   },
   show: {
     opacity: 1,
@@ -59,11 +59,11 @@ export const slider = {
   show: {
     x: "100%",
     skew: "0deg",
-    transition: { ease: "easeOut", duration: 1 },
+    transition: { duration: 1 },
   },
 };
 export const sliderContainer = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   show: { opacity: 1, transition: { staggerChildren: 0.15, ease: "easeOut" } },
 };
 

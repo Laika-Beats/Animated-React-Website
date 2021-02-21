@@ -35,7 +35,6 @@ const OurWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <ScrollTop />
 
       <Movie
         ref={element3}
@@ -75,6 +74,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="athlete" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
@@ -83,6 +83,9 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0rem;
   }

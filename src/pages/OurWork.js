@@ -11,6 +11,7 @@ import {
   scrollReveal,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 import styled from "styled-components";
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
@@ -34,6 +35,7 @@ const OurWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
+      <ScrollTop />
 
       <Movie
         ref={element3}

@@ -14,9 +14,9 @@ function ServicesSection() {
   return (
     <Services
       variants={scrollReveal}
+      ref={element}
       animate={controls}
       initial="hidden"
-      ref={element}
     >
       <Description>
         <h2>
